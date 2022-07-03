@@ -1,0 +1,20 @@
+.header{
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.7), rgba($color-primary-dark,0.9)), url(../assets/header-bg-2.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+    &__logo-box{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    &__text-box{
+        @include absCenter;
+        text-align: center;
+    }
+
+
+}
