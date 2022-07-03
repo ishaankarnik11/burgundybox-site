@@ -206,11 +206,11 @@ body {
     background-size: cover;
     opacity: 0.8; }
     .menu__img--1 {
-      background-image: url(../../assets/indian-food.jpg); }
+      background-image: url(../assets/indian-food.jpg); }
     .menu__img--2 {
-      background-image: url(../../assets/italian-food.jpg); }
+      background-image: url(../assets/italian-food.jpg); }
     .menu__img--3 {
-      background-image: url(../../assets/asian-food.jpg); }
+      background-image: url(../assets/asian-food.jpg); }
   .menu__heading {
     text-transform: uppercase;
     font-size: 2rem; }
