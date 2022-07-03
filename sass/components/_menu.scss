@@ -1,9 +1,10 @@
 .menu {
-    // justify-self: center;
+    justify-self: center;
     position: relative;
     -moz-position: relative;
     perspective: 150rem;
     height: 65rem;
+    width: 35rem;
     
     &__side {
         position: absolute;

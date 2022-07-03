@@ -175,10 +175,12 @@ body {
     color: #FFEDDD; }
 
 .menu {
+  justify-self: center;
   position: relative;
   -moz-position: relative;
   perspective: 150rem;
-  height: 65rem; }
+  height: 65rem;
+  width: 35rem; }
   .menu__side {
     position: absolute;
     top: 0;
@@ -333,9 +335,19 @@ body {
     row-gap: 5rem;
     padding: 0 2rem;
     margin: 0 auto;
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr);
+    width: 100rem; }
+  .grid-container--3 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100rem; } }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1250px) {
   .grid-container--4 {
     width: 130rem;
     display: grid;
@@ -343,7 +355,26 @@ body {
     row-gap: 5rem;
     padding: 0 2rem;
     margin: 0 auto;
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr);
+    width: 70rem; }
+  .grid-container--3 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 70rem; }
+  .grid-container--2 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 70rem; } }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(131, 26, 52, 0.7), rgba(105, 0, 26, 0.9)), url(../assets/header-bg-2.jpg);
@@ -364,20 +395,15 @@ body {
 
 .section-features {
   padding: 15rem 0;
-  height: 100vh;
+  min-height: 100vh;
   position: relative; }
   .section-features__heading {
     text-align: center; }
 
 .section-menu {
   padding: 15rem 0;
+  min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(to right bottom, rgba(131, 26, 52, 0.7), rgba(105, 0, 26, 0.9)), url(../assets/menu-bg.jpg);
   background-size: cover;
   text-align: center; }
-
-@media screen and (max-width: 1150px) {
-  .section-features {
-    padding: 15rem 0;
-    height: 200vh;
-    position: relative; } }

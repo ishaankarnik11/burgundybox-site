@@ -22,12 +22,31 @@
     .grid-container--4{
         @include baseGrid;
         @include gridCol2;
+        width: $grid-width2;
+    }
+    .grid-container--3{
+        @include baseGrid;
+        @include gridCol2;
+        width: $grid-width2;
     }
 }
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1250px){
     .grid-container--4{
         @include baseGrid;
         @include gridCol1;
+        width: $grid-width3;
+    }
+
+    .grid-container--3{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width3;
+    }
+
+    .grid-container--2{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width3;
     }
 }
