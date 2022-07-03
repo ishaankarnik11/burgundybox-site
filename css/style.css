@@ -338,7 +338,7 @@ body {
 .section-menu {
   padding: 15rem 0;
   width: 100%;
-  background-image: linear-gradient(to right bottom, rgba(131, 26, 52, 0.7), rgba(105, 0, 26, 0.9)), url(../../assets/menu-bg.jpg);
+  background-image: linear-gradient(to right bottom, rgba(131, 26, 52, 0.7), rgba(105, 0, 26, 0.9)), url(../assets/menu-bg.jpg);
   background-size: cover;
   text-align: center; }
 
