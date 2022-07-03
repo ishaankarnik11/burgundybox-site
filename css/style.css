@@ -30,12 +30,14 @@ body {
   font-family: 'Arvo', serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777; }
+  color: #3C1422; }
 
 .heading-primary {
-  color: white;
+  color: #FFEDDD;
   text-transform: uppercase;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -48,6 +50,22 @@ body {
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveDown 1s ease-out; }
+
+.heading-secondary {
+  font-size: 4rem;
+  letter-spacing: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, rgba(131, 26, 52, 0.5), rgba(105, 0, 26, 0.7));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; }
+  .heading-secondary--white {
+    color: white; }
+  .heading-secondary--secondary {
+    color: #FFEDDD; }
 
 .heading-tertiary {
   text-transform: uppercase;
@@ -66,6 +84,12 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
 
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 5rem !important; }
+
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
@@ -74,9 +98,16 @@ body {
 
 .u-felx-center {
   display: flex;
+  flex-direction: column;
   height: 100%;
   justify-content: center;
   align-items: center; }
+
+.u-center-element {
+  margin: 0 auto; }
+
+.u-center {
+  text-align: center; }
 
 .bg-video {
   position: absolute;
@@ -93,9 +124,7 @@ body {
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
-  font-size: 1.6rem;
   text-decoration: none;
-  padding: 1.6rem 3rem;
   display: inline-block;
   border-radius: 50rem;
   transition: all 0.2s ease-in-out; }
@@ -107,18 +136,32 @@ body {
     box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: white;
-  color: #777; }
+  background-color: #FFEDDD;
+  color: #3C1422; }
+
+.btn--dark {
+  background-color: #810020;
+  color: #FFEDDD; }
+
+.btn--sm {
+  font-size: 1.3rem;
+  padding: 1.1rem 2rem; }
+
+.btn--lg {
+  font-size: 1.6rem;
+  padding: 1.6rem 3rem; }
 
 .feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 237, 221, 0.8);
+  max-width: 30rem;
   font-size: 1.5rem;
   padding: 2.5rem;
   width: 100%;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  justify-self: center; }
   .feature-box__icon {
     font-size: 6rem;
     display: inline-block;
@@ -129,14 +172,144 @@ body {
   .feature-box:hover {
     transform: translateY(-2rem) scale(1.1);
     background-image: linear-gradient(to right bottom, rgba(131, 26, 52, 0.5), rgba(105, 0, 26, 0.7));
-    color: white; }
+    color: #FFEDDD; }
 
-.grid-container {
+.menu {
+  position: relative;
+  -moz-position: relative;
+  perspective: 150rem;
+  height: 65rem; }
+  .menu__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 65rem;
+    width: 35rem;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    backface-visibility: hidden;
+    transition: all 0.8s ease; }
+    .menu__side--front {
+      background-color: #FFEDDD; }
+    .menu__side--back {
+      background-color: #FFEDDD;
+      transform: rotateY(180deg); }
+  .menu:hover .menu__side--front {
+    transform: rotateY(-180deg); }
+  .menu:hover .menu__side--back {
+    transform: rotateY(0); }
+  .menu__img {
+    height: 25rem;
+    width: 35rem;
+    background-size: cover;
+    opacity: 0.8; }
+    .menu__img--1 {
+      background-image: url(../../assets/indian-food.jpg); }
+    .menu__img--2 {
+      background-image: url(../../assets/italian-food.jpg); }
+    .menu__img--3 {
+      background-image: url(../../assets/asian-food.jpg); }
+  .menu__heading {
+    text-transform: uppercase;
+    font-size: 2rem; }
+  .menu__description {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1rem 2rem; }
+  .menu__title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 1rem; }
+  .menu__submenu {
+    text-align: left;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem; }
+  .menu__list {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+  .menu__item {
+    border-bottom: 1px dotted #3C1422; }
+    .menu__item--name {
+      float: left; }
+    .menu__item--cost {
+      float: right; }
+
+.popup-menu {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .popup-menu__content {
+    height: 30rem;
+    width: 60rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.grid-container--4 {
   width: 130rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   column-gap: 5rem;
-  padding: 0 2rem; }
+  row-gap: 5rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr); }
+
+.grid-container--3 {
+  width: 130rem;
+  display: grid;
+  column-gap: 5rem;
+  row-gap: 5rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr); }
+
+.grid-container--2 {
+  width: 130rem;
+  display: grid;
+  column-gap: 5rem;
+  row-gap: 5rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr); }
+
+.grid-container--1 {
+  width: 130rem;
+  display: grid;
+  column-gap: 5rem;
+  row-gap: 5rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(1, 1fr); }
+
+@media screen and (max-width: 1400px) {
+  .grid-container--4 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 1150px) {
+  .grid-container--4 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr); } }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(131, 26, 52, 0.7), rgba(105, 0, 26, 0.9)), url(../assets/header-bg-2.jpg);
@@ -159,3 +332,18 @@ body {
   padding: 15rem 0;
   height: 100vh;
   position: relative; }
+  .section-features__heading {
+    text-align: center; }
+
+.section-menu {
+  padding: 15rem 0;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(131, 26, 52, 0.7), rgba(105, 0, 26, 0.9)), url(../../assets/menu-bg.jpg);
+  background-size: cover;
+  text-align: center; }
+
+@media screen and (max-width: 1150px) {
+  .section-features {
+    padding: 15rem 0;
+    height: 200vh;
+    position: relative; } }

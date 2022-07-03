@@ -1,0 +1,17 @@
+.popup-menu{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, 0.8);
+
+    &__content{
+        height: 30rem;
+        width: 60rem;
+        background-color: $color-white;
+        @include absCenter;
+    }
+
+
+}

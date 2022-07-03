@@ -4,3 +4,37 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+}
+
+@mixin baseGrid{
+    width: $grid-width;
+    display: grid;
+    column-gap: $col-gap;
+    row-gap: $row-gap;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+@mixin gridCol4 {
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+@mixin gridCol3{
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+@mixin gridCol2{
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+@mixin gridCol1{
+    grid-template-columns: repeat(1 , 1fr);
+}

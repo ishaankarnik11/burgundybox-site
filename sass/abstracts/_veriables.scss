@@ -3,6 +3,9 @@ $color-primary: #810020;
 $color-primary-light: #831a34;
 $color-primary-dark: #69001a;
 
+//secondary colors
+$color-secondary: #FFEDDD;
+
 //black colors
 $color-gray-dark: #777;
 $color-gray-dark-2: #999;
@@ -12,9 +15,14 @@ $color-gray-light2: #eee;
 $color-black: black;
 $color-white: white;
 
-$default-font-color: #777;
+$default-font-color: #3C1422;
 
 //Font Sizes
 $default-font-size: 1.6rem;
+
+//Grid spacing
+$col-gap: 5rem;
+$row-gap: 5rem;
+$grid-width:130rem;
 
 

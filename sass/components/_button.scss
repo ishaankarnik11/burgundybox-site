@@ -4,9 +4,9 @@
     &:link,
     &:visited{
         text-transform: uppercase;
-        font-size: $default-font-size;
+        
         text-decoration: none;
-        padding: 1.6rem 3rem;
+        
         display: inline-block;
         border-radius: 50rem;
         transition: all 0.2s ease-in-out;
@@ -25,10 +25,22 @@
 
 
     &--white{
-        background-color: $color-white;
+        background-color: $color-secondary;
         color: $default-font-color;
     }
+
+    &--dark{
+        background-color: $color-primary;
+        color: $color-secondary;
+    }
+
+    &--sm{
+        font-size: 1.3rem;
+        padding: 1.1rem 2rem;
+    }
     
-    
-    
+    &--lg{
+        font-size: $default-font-size;
+        padding: 1.6rem 3rem;
+    }
 }

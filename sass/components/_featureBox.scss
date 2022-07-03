@@ -1,6 +1,7 @@
 .feature-box{
     
-    background-color: rgba($color-white, 0.8);
+    background-color: rgba($color-secondary, 0.8);
+    max-width: 30rem;
     font-size: 1.5rem;
     padding: 2.5rem;
     width: 100%;
@@ -8,6 +9,7 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     transition: all 0.3s ease-in-out;
+    justify-self: center;
 
     &__icon{
         font-size: 6rem;
@@ -22,7 +24,7 @@
     &:hover{
         transform: translateY(-2rem) scale(1.1);
         background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.5), rgba($color-primary-dark,0.7));
-        color: $color-white;
+        color: $color-secondary;
     }
 
 }

@@ -1,7 +1,33 @@
-.grid-container{
-    width: 130rem;
-    display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    column-gap: 5rem;
-    padding: 0 2rem;
+.grid-container--4{
+    @include baseGrid;
+    @include gridCol4;
+}
+
+.grid-container--3{
+    @include baseGrid;
+    @include gridCol3;
+}
+
+.grid-container--2{
+    @include baseGrid;
+    @include gridCol2;
+}
+
+.grid-container--1{
+    @include baseGrid;
+    @include gridCol1;
+}
+
+@media screen and (max-width: 1400px){
+    .grid-container--4{
+        @include baseGrid;
+        @include gridCol2;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .grid-container--4{
+        @include baseGrid;
+        @include gridCol1;
+    }
 }

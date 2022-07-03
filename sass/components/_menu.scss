@@ -1,0 +1,110 @@
+.menu {
+    // justify-self: center;
+    position: relative;
+    -moz-position: relative;
+    perspective: 150rem;
+    height: 65rem;
+    
+    &__side {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 65rem;
+        width: 35rem;
+        text-align: center;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+        backface-visibility: hidden;
+        transition: all 0.8s ease;
+
+        &--front{
+            background-color: $color-secondary;
+        }
+
+        &--back{
+            background-color: $color-secondary;
+            transform: rotateY(180deg);
+        }
+
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+
+    
+
+    &__img {
+        height: 25rem;
+        width: 35rem;
+        background-size: cover;
+        opacity: 0.8;
+        // background-blend-mode: lighten;
+
+        &--1 {
+            background-image: url(../../assets/indian-food.jpg);
+            
+        }
+
+        &--2 {
+            background-image: url(../../assets/italian-food.jpg);
+            
+        }
+
+        &--3 {
+            background-image: url(../../assets/asian-food.jpg);
+            
+        }
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    &__description {
+        display: inline-block;
+        font-size: $default-font-size;
+        padding: 1rem 2rem;
+    }
+
+
+    //menu styling
+    &__title{
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    &__submenu{
+        text-align: left;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+    }
+
+    &__list{
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__item{
+        border-bottom: 1px dotted $default-font-color;
+
+        &--name{
+            float: left;
+
+        }
+
+        &--cost{
+            float: right;
+        }
+    }
+}
