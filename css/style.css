@@ -72,6 +72,18 @@ body {
   font-size: 1.6rem;
   font-weight: 700; }
 
+@media screen and (max-width: 790px) {
+  .heading-primary--main {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem; }
+  .heading-primary--sub {
+    font-size: 1rem;
+    letter-spacing: 3px; }
+  .heading-secondary {
+    font-size: 2rem;
+    letter-spacing: 1.75px; } }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -150,6 +162,11 @@ body {
 .btn--lg {
   font-size: 1.6rem;
   padding: 1.6rem 3rem; }
+
+@media screen and (max-width: 790px) {
+  .btn--lg {
+    font-size: 1.1rem;
+    padding: 1.1rem 2rem; } }
 
 .feature-box {
   background-color: rgba(255, 237, 221, 0.8);
@@ -241,6 +258,22 @@ body {
     .menu__item--cost {
       float: right; }
 
+@media screen and (max-width: 530px) {
+  .menu {
+    width: 25rem; }
+    .menu__side {
+      width: 25rem; }
+    .menu__list {
+      font-size: 1.1rem; } }
+
+@media screen and (max-width: 375px) {
+  .menu {
+    width: 100%; }
+    .menu__side {
+      width: 100%; }
+    .menu__list {
+      font-size: 1.1rem; } }
+
 .popup-menu {
   height: 100vh;
   width: 100%;
@@ -290,6 +323,30 @@ body {
     display: inline-block;
     width: max-content;
     justify-self: center; }
+
+@media screen and (max-width: 660px) {
+  .footer__link:link, .footer__link:visited {
+    font-size: 1rem; }
+  .footer__copyright {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 530px) {
+  .footer__link:link, .footer__link:visited {
+    font-size: 1rem; }
+  .footer__copyright {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 414px) {
+  .footer__link:link, .footer__link:visited {
+    font-size: 1rem; }
+  .footer__list {
+    flex-direction: column; }
+  .footer__navigation {
+    justify-self: flex-start; }
+  .footer__copyright {
+    font-size: 1rem;
+    justify-self: flex-start;
+    width: 10.5rem; } }
 
 .grid-container--4 {
   width: 130rem;
@@ -375,6 +432,93 @@ body {
     margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
     width: 70rem; } }
+
+@media screen and (max-width: 775px) {
+  .grid-container--4 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 45rem; }
+  .grid-container--3 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 45rem; }
+  .grid-container--2 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 45rem; } }
+
+@media screen and (max-width: 520px) {
+  .grid-container--4 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 35rem; }
+  .grid-container--3 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 35rem; }
+  .grid-container--2 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 35rem; } }
+
+@media screen and (max-width: 375px) {
+  .grid-container--4 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 25rem; }
+  .grid-container--3 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 25rem; }
+  .grid-container--2 {
+    width: 130rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 25rem; } }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(131, 26, 52, 0.7), rgba(105, 0, 26, 0.9)), url(../assets/header-bg-2.jpg);

@@ -20,6 +20,7 @@ body{
         font-weight: 400;
         letter-spacing: 3.5rem;
         animation: moveInFocus 0.8s ease-out;
+        
     }
     &--sub{
         display: block;
@@ -57,4 +58,20 @@ body{
     text-transform: uppercase;
     font-size: $default-font-size;
     font-weight: 700;
+}
+
+@media screen and (max-width:790px) {
+    .heading-primary--main{
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;
+    }
+    .heading-primary--sub{
+        font-size: 1rem;
+        letter-spacing: 3px;
+    }
+    .heading-secondary{
+        font-size: 2rem;
+        letter-spacing: 1.75px;
+    }
 }

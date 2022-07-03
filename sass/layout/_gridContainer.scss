@@ -50,3 +50,63 @@
         width: $grid-width3;
     }
 }
+
+@media screen and (max-width: 775px){
+    .grid-container--4{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width4;
+    }
+
+    .grid-container--3{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width4;
+    }
+
+    .grid-container--2{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width4;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .grid-container--4{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width5;
+    }
+
+    .grid-container--3{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width5;
+    }
+
+    .grid-container--2{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width5;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .grid-container--4{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width6;
+    }
+
+    .grid-container--3{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width6;
+    }
+
+    .grid-container--2{
+        @include baseGrid;
+        @include gridCol1;
+        width: $grid-width6;
+    }
+}
